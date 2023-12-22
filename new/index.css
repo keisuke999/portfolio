@@ -189,7 +189,7 @@ gap: 20px;
 .navli{
   width: 100%;
   height: 100vh;
-  background-image: url(../images/E0EE07E5-0E14-41E9-9F21-FE9052CD1C02_1_105_c\ 1.jpg);
+  background-image: url(images/E0EE07E5-0E14-41E9-9F21-FE9052CD1C02_1_105_c\ 1.jpg);
   position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -277,7 +277,7 @@ padding: 20px;
 margin-bottom: 20%;
 }
 .myself{
-  background-image: url(../images/5B697C2E-7A91-4427-947D-79F0672DEC36\ 1.jpg);
+  background-image: url(images/5B697C2E-7A91-4427-947D-79F0672DEC36\ 1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -316,7 +316,7 @@ footer img{
 }
 /* works */
 .workstop{
-  background-image: url(../images/workstop.jpg);
+  background-image: url(images/workstop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -346,7 +346,7 @@ gap: 26px;
 }
 /* contact */
 .contacttop{
-  background-image: url(../images/contacttop.jpg);
+  background-image: url(images/contacttop.jpg);
 }
 iframe{
   width: 100%;
