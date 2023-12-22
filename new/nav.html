@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .burgermenu{
+  width: 40px;
+  height:40px;
+  position: fixed;
+  right: 30px;
+  z-index: 1111;
+}
+.burgermenu span{
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: red;
+  top: 10px;
+  left: 5px;
+  right: 5px;
+}
+
+.burgermenu span:nth-of-type(1){
+       top: 15px;
+      
+}
+.burgermenu span:nth-of-type(2){
+      top: 20px;
+}
+.burgermenu span:nth-of-type(3){
+  top: 25px;
+}
+.active span:nth-of-type(1){
+  transform: translateY(5px) rotate(45deg);
+  transition: 0.5s;
+}
+.active span:nth-of-type(2){
+opacity: 0;
+transition: 0.5s;
+}
+ .active span:nth-of-type(3){
+transform: translateY(-5px) rotate(-45deg);
+transition: 0.5s;
+}
+
+.burgermenu-nav {
+position: fixed;
+top:0;
+text-align: center;
+width: 100%;
+background-image: url(_DSC0556.JPG);
+background-position: center;
+background-size: cover;
+z-index: 999;
+opacity: 0;
+pointer-events: none;
+transition: 1.5s;
+height: 100vh;
+padding: 20px 0;
+
+}
+
+.burgermenu-nav.active{
+opacity: 1;
+pointer-events: auto;
+}
+.burgermenu-nav nav{
+  padding: 50px 0;
+}
+.burgermenu-nav ul li{
+font-size: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+
+}
+.burgermenu-nav ul li a{
+color: #D1C2C2;
+display: block;
+padding: 30px;
+
+}
+.burgermenu-nav ul li:hover{
+  background-color: #ffffff0b;
+  backdrop-filter: blur(3px);
+  transition:0.9s;
+  color: red;
+}
+.burgermenu-nav ul li a:hover{
+color: red;
+transition:0.9s;
+transform: scale(1.05);
+}
+.swiper {
+      width: 100%;
+      height: 100%;
+      margin-top: 100px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .LP h3{
+     font-size: 15px;
+     background-color: #D1C2C2;
+     border-radius: 20px;
+     padding: 5px 10px;
+     width: fit-content;
+     margin: 10px auto;
+    }
+    .LP p{
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+    .container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+iframe{
+  width: 100%;
+  height: 90vh;
+}
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- <div class="burgermenu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+</div>
+<div class="burgermenu-nav">
+<nav>
+  <ul> 
+    <li><a href="index.html">TOP</a></li>
+    <li><a href="works.html">WORKS</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="#skill">SKILL</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+</div> -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="LP">
+        <img src="Group 1033.jpg" alt="">
+        <h3>タンタンコーポレーション株式会社</h3>
+        <p>日立エアコンフェアのLP</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="LP">
+        <img src="Group 1033.jpg" alt="">
+        <h3>タンタンコーポレーション株式会社</h3>
+        <p>日立エアコンフェアのLP</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="LP">
+        <img src="Group 1033.jpg" alt="">
+        <h3>タンタンコーポレーション株式会社</h3>
+        <p>日立エアコンフェアのLP</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="LP">
+        <img src="Group 1033.jpg" alt="">
+        <h3>タンタンコーポレーション株式会社</h3>
+        <p>日立エアコンフェアのLP</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="LP">
+        <img src="Group 1033.jpg" alt="">
+        <h3>タンタンコーポレーション株式会社</h3>
+        <p>日立エアコンフェアのLP</p>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<div class="container">
+  <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+</div>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEzs3DwFLWSkzj_ruDIb5WrSp6EJgThkQrbWSr2ruw1LV8dQ/viewform?usp=pp_url" frameborder="0"></iframe>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    breakpoints: {
+    800: {
+      slidesPerView: 2,
+    },
+    500: {
+      slidesPerView: 1,
+    },
+  },
+    autoplay: {
+        delay: 0,
+    },
+    loop: true,
+  speed: 4000,
+  preventInteractionOnTransition: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+  });
+</script>
+<script>
+  const burgerMenu = document.querySelector('.burgermenu');
+const burgerMenuNav = document.querySelector('.burgermenu-nav');
+
+burgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.toggle('active');
+  burgerMenuNav.classList.toggle('active');
+});
+
+const navLinks = document.querySelectorAll('.burgermenu-nav ');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    burgerMenu.classList.remove('active');
+    burgerMenuNav.classList.remove('active');
+  });
+});
+
+</script>
+<script>
+  function submitForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // ここでフォームデータを処理する（サーバーサイドの実装を追加する必要があります）
+
+    // 例: フォームデータをコンソールに表示
+    console.log("Name: " + name);
+    console.log("Email: " + email);
+    console.log("Message: " + message);
+
+    // フォームのクリア
+    document.getElementById("contactForm").reset();
+}
+</script>
+</body>
+</html>
