@@ -9,7 +9,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Zen+Kaku+Gothic+New:wght@300;400;500;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<script   src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script>
+  <script>
+$(function () {
+  var webStorage = function () {
+    if (sessionStorage.getItem('access')) {
+      $(".loading").addClass('hide');
+    } else {
+      sessionStorage.setItem('access', 'true'); 
+      $(".loading-animation").addClass('hide'); 
+      setTimeout(function () {
+        $(".loading").addClass('hide');
+        $(".loading-animation").removeClass('hide');
+      }, 3000); 
+    }
+  }
+  webStorage();
+});
+</script>
 </head>
 <body>
   <div class="loading">
@@ -148,26 +165,6 @@
     },
 
   })
-</script>
-<script>
-$(function () {
-  var webStorage = function () {
-    if (sessionStorage.getItem('access')) {
-
-      $(".loading").addClass('hide');
-    } else {
-
-      sessionStorage.setItem('access', 'true'); 
-      $(".loading-animation").addClass('hide'); 
-      setTimeout(function () {
-        // ローディングを数秒後に非表示にする
-        $(".loading").addClass('hide');
-        $(".loading-animation").removeClass('hide');
-      }, 3000); // ローディングを表示する時間
-    }
-  }
-  webStorage();
-});
 </script>
 <script src="nav.js"></script>
 
