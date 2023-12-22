@@ -10,23 +10,6 @@
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script>
-  <script>
-$(function () {
-  var webStorage = function () {
-    if (sessionStorage.getItem('access')) {
-      $(".loading").addClass('hide');
-    } else {
-      sessionStorage.setItem('access', 'true'); 
-      $(".loading-animation").addClass('hide'); 
-      setTimeout(function () {
-        $(".loading").addClass('hide');
-        $(".loading-animation").removeClass('hide');
-      }, 3000); 
-    }
-  }
-  webStorage();
-});
-</script>
 </head>
 <body>
   <div class="loading">
@@ -166,6 +149,7 @@ $(function () {
 
   })
 </script>
+<script src="loading.js" defer></script>
 <script src="nav.js"></script>
 
 </body>
