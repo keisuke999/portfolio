@@ -11,62 +11,45 @@ font-family: 'Noto Serif JP', serif;
 font-family: 'Zen Kaku Gothic New', sans-serif;
     }
 .loading{
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  animation-name: fadeout;
-  animation-duration: 7s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeout{
-  0%{
-    opacity: 1;
-  }
-  50%{
-    opacity: 1;
-  }
-  100%{
-   opacity: 0;
-  }
-}
-.main{
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
       width: 100%;
-      height: 100vh;
-      position: relative;
+      opacity: 1;
+      transition: 1s;
+      animation-duration: 8s;
     }
-    video{
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
+    #loading.loaded {
+      opacity: 0;
+      visibility: hidden;
     }
-    .maintitle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    }
-    .animate{
-      animation-duration: 1s;
-    }
-    .maintitle P{
-      color: aliceblue;
-      text-align: center;
-      margin-top: -10PX;
-      font-family: 'Koh Santepheap', serif;
-    }
-    @keyframes fadeInAnime{
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
+    .main{
+          width: 100%;
+          height: 100vh;
+          position: relative;
+        }
+        video{
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+        }
+        .maintitle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        }
+        .maintitle P{
+          color: aliceblue;
+          text-align: center;
+          margin-top: -10PX;
+          font-family: 'Koh Santepheap', serif;
+        }
+      
 img{
   width: 100%;
 }
