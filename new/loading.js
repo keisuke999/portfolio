@@ -1,18 +1,16 @@
-$(function () {
-  var webStorage = function () {
-    if (sessionStorage.getItem('access')) {
+"use strict" 
 
-      $(".loading").addClass('hide');
-    } else {
+function loadedPage() {
+  const loadingID = document.getElementById("loading");
+  loadingID.classList.add("loaded");
+}
 
-      sessionStorage.setItem('access', 'true'); 
-      $(".loading-animation").addClass('hide'); 
-      setTimeout(function () {
-        // ローディングを数秒後に非表示にする
-        $(".loading").addClass('hide');
-        $(".loading-animation").removeClass('hide');
-      }, 3000); // ローディングを表示する時間
-    }
-  }
-  webStorage();
-});
+if (!sessionStorage.getItem('visited')) {
+  sessionStorage.setItem('visited', 'first');
+  window.addEventListener('load', function () {
+    setTimeout(loadedPage, 5000);
+  });
+  setTimeout(loadedPage, 7000);
+}else {
+  loadedPage();
+}
