@@ -180,7 +180,7 @@ gap: 20px;
 
 }
 .navli li a{
-  font-size: 50px;
+  font-size: clamp(1.875rem, 1.367rem + 2.2vw, 3.125rem);
 }
 .navli nav ul li a:hover{
   color: rgb(217, 3, 3);
