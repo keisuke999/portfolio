@@ -20,6 +20,9 @@ font-family: 'Zen Kaku Gothic New', sans-serif;
       transition: 1s;
       animation-duration: 8s;
     }
+.keisukePR{
+  display:none;
+}
     #loading.loaded {
       opacity: 0;
       visibility: hidden;
