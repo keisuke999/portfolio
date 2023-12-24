@@ -3,6 +3,10 @@
 function loadedPage() {
   const loadingID = document.getElementById("loading");
   loadingID.classList.add("loaded");
+  document.documentElement.className = 'no-fouc';
+  $(document).ready(function () {
+    $('.keisukePR').removeClass('keisukePR');
+  })
 }
 
 if (!sessionStorage.getItem('visited')) {
