@@ -21,7 +21,7 @@ font-family: 'Zen Kaku Gothic New', sans-serif;
       animation-duration: 8s;
     }
 .keisukePR{
-  display:none;
+    visibility:hidden;
 }
     #loading.loaded {
       opacity: 0;
