@@ -521,4 +521,7 @@ width: 100%;
 font-size: 23px;
 margin-bottom: -60px;
 }
+  .workstop h1,.workstop h1,.contacttop h1{
+  width: 50px;
+}
 }
