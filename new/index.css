@@ -390,6 +390,7 @@ margin-bottom: 40vh;
 }
 .right h3{
   margin-bottom: 30vh;
+  text-align: right;
 }
 .aboutmy p{
   width: 140%;
@@ -406,6 +407,7 @@ margin-bottom: 40vh;
 .aboouttxt{
   background-color: #373131;
 }
+
 .aboutimg img{
   overflow: hidden;
   object-fit: cover;
@@ -419,6 +421,15 @@ margin-bottom: 40vh;
 .right .aboutimg{
   width: 69%;
   margin-right: auto;
+}
+.right.aboutmy{
+  gap: -100px;
+}
+.right.aboutmy p{
+  width: 140%;
+  background-color: #fff;
+  padding: 50px 20px 0;
+  margin-bottom: -1%;
 }
 @media (max-width:800px) {
   .pc{
