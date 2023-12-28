@@ -350,7 +350,7 @@ h2{
   width: 100%;
   overflow: hidden;
 }
-.abouttop h1{
+.abouttop h1,.workstop h1,.contacttop h1{
   width: 80px;
   padding: 10px;
   }
