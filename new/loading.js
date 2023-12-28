@@ -6,7 +6,9 @@ function loadedPage() {
   document.documentElement.className = 'no-fouc';
   $(document).ready(function () {
     $('.keisukePR').removeClass('keisukePR');
-  })
+  });
+
+  loadingID.parentNode.removeChild(loadingID);
 }
 
 if (!sessionStorage.getItem('visited')) {
@@ -15,6 +17,6 @@ if (!sessionStorage.getItem('visited')) {
     setTimeout(loadedPage, 5000);
   });
   setTimeout(loadedPage, 7000);
-}else {
+} else {
   loadedPage();
 }
