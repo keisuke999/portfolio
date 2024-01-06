@@ -417,6 +417,7 @@ margin-bottom: 40vh;
   padding: 50px 20px ;
   margin-bottom: -1%;
   text-align: justify; 
+  font-weight: lighter;
 }
 .aboutimg{
   display: flex;
