@@ -416,6 +416,7 @@ margin-bottom: 40vh;
   background-color: #fff;
   padding: 50px 20px ;
   margin-bottom: -1%;
+  text-align: justify; 
 }
 .aboutimg{
   display: flex;
