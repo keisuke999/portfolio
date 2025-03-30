@@ -147,7 +147,6 @@ background-color: #ffffff;
   align-items: flex-end;
   padding-left: 3%;
   overflow: hidden;
-  gap: 30px;
 }
 .strength-content.second{
 align-items: center;
@@ -155,6 +154,7 @@ align-items: center;
 .strength-img {
 height: max(334px,91.43484626647145vw);
 width:max(50px,14.860907759882869vw);
+  padding-left:30px;
 }
 .strength-img img{
 height: 100%;
