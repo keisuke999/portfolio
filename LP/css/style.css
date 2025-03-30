@@ -357,6 +357,9 @@ color: #000000;
   .strength-txt br{
     display: none;
   }
+    .strength-point .firtst{
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width:600px){
 .selected-title br{
