@@ -152,11 +152,9 @@ background-color: #ffffff;
 align-items: center;
 }
 .strength-img {
-height: max(334px,91.43484626647145vw);
 width:max(50px,14.860907759882869vw);
 }
 .strength-img img{
-  height: max(334px,91.43484626647145vw);
   width:max(50px,14.860907759882869vw);
 }
 .strength-title.margin {
