@@ -293,7 +293,7 @@ height: 100%;
 .plan-list div img{
   border-radius: 20px;
 }
-.open {
+.plan-list div .open {
   display: none;
 }
 
